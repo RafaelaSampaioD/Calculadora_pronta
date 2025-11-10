@@ -1,0 +1,116 @@
+/* fonte da calculadora- Roboto Moto*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+/* Configuração da página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 90;
+}
+
+/* Definição do body*/
+body {
+    background-image: url(./imagem/fundo.jpg);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* corpo da calculadora */
+.calculadora {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(73, 26, 38, 0.87);
+    width: 620px;
+    display: flex;
+    flex-direction: column;
+    gap: 205px;
+}
+
+/* Definição do input */
+#tela {
+    width: 100%;
+    height: 60px;
+    font-size: 1.5em;
+    padding: 20px;
+    border: none;
+    border-radius: 50px;
+    background: #c56b7f;
+    text-align: right;
+    box-shadow: inset 0 0 5px rgba(161, 75, 75, 0.26);
+    font-family: "DotGothic16", sans-serif;
+    font-weight: 400;
+    outline: none;
+}
+
+/* botões*/
+.botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.linha_botoes {
+    display: flex;
+    gap: 15px;
+}
+
+/* button */
+button {
+    flex: 1;
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background: #bd808f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* quando passarmos o mouse */
+button:hover {
+    background-color: #92bdc9;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* quando click_ se lembrar da tag button */
+button:active {
+    transform: scale(0.97);
+}
+
+/* operadores(1)*/
+.operador {
+    background-color: #8fa4bd;
+}
+
+/* como vai atuar a class de operador */
+.operador:hover {
+    background-color: #94b2da;
+}
+
+.botao_igual_a {
+    background-color: #ddc96f;
+}
+
+/* ao passar*/
+.botao_igual_a:hover {
+    background-color: #abc769;
+}
+
+/*botão del*/
+.botao_limpar {
+    background-color: #965f5f;
+}
+
+/* ao click_do botão del */
+.botao_limpar:hover {
+    background-color: #332424;
+}
+
